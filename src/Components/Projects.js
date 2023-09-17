@@ -24,7 +24,7 @@ const Projects = () => {
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Developing an equipment rental portal using the MERN stack. The frontend (React.js) handles the user interface for browsing, filtering, and renting equipment. Backend (Node.js & Express.js) manages business logic, user authentication, cart, and payments. MongoDB stores data, and features include user auth, equipment listings, cart, order management, and admin panel. Payment integration ensures secure transactions. Security and performance optimizations ensure a smooth user experience.
                                         View</div>
-                                    <a href='https://benevolent-rabanadas-8249e7.netlify.app' target='_blank'>Click</a>
+                                    <a href='https://benevolent-rabanadas-8249e7.netlify.app' target='_blank' rel='noreferrer'>Click</a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Projects = () => {
                                     <div class="accordion-body">
                                         React Markdown Viewer is a powerful and versatile React component that enables the rendering and display of Markdown content within a web application. It provides a seamless way to parse and transform Markdown syntax into structured and visually appealing HTML elements, allowing users to easily view and interact with formatted text, headings, lists, code blocks, and other Markdown elements in a dynamic and responsive manner.
                                     </div>
-                                    <a href='https://lighthearted-toffee-fb9353.netlify.app' target='_blank'>Click</a>
+                                    <a href='https://lighthearted-toffee-fb9353.netlify.app' target='_blank' rel='noreferrer'>Click</a>
                                 </div>
                             </div>
                         </div>
