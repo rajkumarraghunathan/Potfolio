@@ -1,6 +1,6 @@
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
-import Header from './Components/Header';
+// import { Routes, Route } from 'react-router-dom'
+// import Header from './Components/Header';
 import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
@@ -15,7 +15,7 @@ import ScrollButton from './Components/ScrollButton';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Home />
       <About />
       <div className=' container divider'></div>
@@ -27,7 +27,7 @@ function App() {
       <div className=' container divider'></div>
       <Projects />
       <div className=' container divider'></div>
-      <Contacts />
+      {/* <Contacts /> */}
       <ScrollButton />
 
     </div>
