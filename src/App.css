@@ -1,38 +1,186 @@
 .App {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ScrollButtons.css */
+.scroll-button-up {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  /* background-color: #007bff;
+  color: #fff; */
+  border-radius: 15px;
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  /* display: none; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scroll-button-down {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #030303;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scroll-button-up:focus {
+  outline: none;
+}
+
+.scroll-button-bottom:focus {
+  outline: none;
+}
+
+/* Show the buttons when scrolling down */
+body.scrolling-down .scroll-button {
+  display: block;
+}
+
+body.scrolling-up .scroll-button {
+  display: block;
+}
+
+
+.divider {
+  border: 0.1px solid rgb(175, 171, 171);
+}
+
+.Navlink:hover {
+  background-color: rgb(15, 115, 230);
+  color: #fff;
+  border-radius: 10%
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family: 'Roboto';
+
+}
+
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+}
+
+.container1 {
+  /* background-image: url('../images/wp8904080-mern-stack-wallpapers.jpg'); */
+  background-size: 100% 100%;
+  /* background-color: #9bd5dd; */
+  /* background-color: gray; */
+  background-color: black;
+  color: white;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  /* background-color: #20a7d8; */
+  font-style: italic;
+}
+
+.second div {
+  /* background-color: #CD921E; */
+  font-style: italic;
+}
+
+.third div {
+  /* background-color: #CD921E; */
+  font-style: italic;
+}
+
+
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  10% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -5.62rem;
+  }
+
+  30% {
+    margin-top: -5.62rem;
+  }
+
+  40% {
+    margin-top: -11.24rem;
+  }
+
+  60% {
+    margin-top: -11.24rem;
+  }
+
+  70% {
+    margin-top: -5.62rem;
+  }
+
+  80% {
+    margin-top: -5.62rem;
+  }
+
+  90% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+.p {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff, #ce1f1f, #000000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
   }
 }
