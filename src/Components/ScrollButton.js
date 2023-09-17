@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 
 const ScrollButton = () => {
 
-    const [value, setValue] = useState(true)
+    // const [value, setValue] = useState(true)
 
     useEffect(() => {
         const handleUpClick = () => {
