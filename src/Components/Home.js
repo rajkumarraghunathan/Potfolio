@@ -2,7 +2,7 @@ import React from 'react'
 import { BsArrowDownCircleFill } from 'react-icons/bs';
 import { GrLinkedin } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
-import pdf from '../PDF/Rajkumar_Resume.pdf'
+import pdf from "../PDF/RAJKUMAR's Resume.pdf"
 
 const Home = () => {
     return (
