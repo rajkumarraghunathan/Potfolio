@@ -14,7 +14,6 @@ import ScrollButton from './Components/ScrollButton';
 function App() {
   return (
     <div className="App">
-
       <Home />
       <About />
       <div className=' container divider'></div>
@@ -26,9 +25,7 @@ function App() {
       <div className=' container divider'></div>
       <Projects />
       <div className=' container divider'></div>
-
       <ScrollButton />
-
     </div>
   );
 }
