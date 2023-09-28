@@ -6,6 +6,12 @@ const Projects = () => {
     return (
         <div className='py-5 container'>
             <h1>Projects</h1>
+
+            <div>
+                <p><span className='text-primary fw-bold'>Credentials admin</span>:9003490676raj@gmail.com <span className='text-primary fw-bold'>password:</span>123456789</p>
+                <p><span className='text-primary fw-bold'>Credentials User</span>:amrr7raghu@gmail.com <span className='text-primary fw-bold'>password:</span>123456789</p>
+            </div>
+
             <div className='d-flex justify-content-center flex-column'>
 
                 <div class="card text-center shadow-lg p-3 mb-5 bg-body rounded" >

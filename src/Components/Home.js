@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowDownCircleFill } from 'react-icons/bs';
+import { AiFillFileText } from 'react-icons/ai';
 import { GrLinkedin } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
 import pdf from "../PDF/RAJKUMAR's Resume.pdf"
@@ -18,7 +18,7 @@ const Home = () => {
                     </section>
                     {/* <div className='text-light'><a className='btn btn-success' href={pdf} download={pdf}>Resume<BsArrowDownCircleFill /></a></div> */}
                     <div className='text-light'>
-                        <a className='btn btn-success' href={pdf} download>Resume<BsArrowDownCircleFill /></a>
+                        <a className='btn btn-success' href={pdf} target='_blank'>Resume<AiFillFileText /></a>
                     </div>
 
                     <div className='d-flex justify-content-center'>
