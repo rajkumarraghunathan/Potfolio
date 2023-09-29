@@ -9,7 +9,7 @@ import Projects from './Components/Projects';
 
 import ScrollButton from './Components/ScrollButton';
 import Footer from './Components/Footer';
-import Contact from './Components/Contact';
+import Contacts from './Components/Contacts';
 
 
 
@@ -29,7 +29,7 @@ function App() {
       <div className=' container divider'></div>
       <ScrollButton />
       <div className=' container divider'></div>
-      <Contact />
+      <Contacts />
       <Footer />
     </div>
   );
