@@ -21,7 +21,7 @@ const Contacts = () => {
             }).then(data => console.log(data))
         } catch (error) {
             console.error(error);
-            return toast(error)
+            return toast(error.message)
         }
     }
 
