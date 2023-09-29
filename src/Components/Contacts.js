@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import { GrLinkedin } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
 import axios from 'axios';
@@ -10,6 +11,7 @@ const Contacts = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
+
     const handleForm = (event) => {
         event.preventDefault();
         try {
@@ -19,6 +21,7 @@ const Contacts = () => {
             }).then(data => console.log(data))
         } catch (error) {
             console.error(error);
+            return toast(error)
         }
     }
 
@@ -50,6 +53,7 @@ const Contacts = () => {
                     <div>
                         <button className='btn btn-success' >Send me a mail</button>
                     </div>
+                    <ToastContainer />
                 </div>
             </form>
         </div>
