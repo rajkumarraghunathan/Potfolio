@@ -18,7 +18,7 @@ const Home = () => {
                     </section>
                     {/* <div className='text-light'><a className='btn btn-success' href={pdf} download={pdf}>Resume<BsArrowDownCircleFill /></a></div> */}
                     <div className='text-light'>
-                        <a className='btn btn-success' href={pdf} target='_blank'>Resume<AiFillFileText /></a>
+                        <a className='btn btn-success' href={pdf} target='_blank' rel="noreferrer">Resume<AiFillFileText /></a>
                     </div>
 
                     <div className='d-flex justify-content-center'>
