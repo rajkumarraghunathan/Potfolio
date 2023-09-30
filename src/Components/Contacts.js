@@ -36,6 +36,7 @@ const Contacts = () => {
     return (
         <div className='py-5 bg-dark'>
             <h1 className='text-light'>Contact me</h1>
+            <ToastContainer />
             <div className='d-flex justify-content-center'>
                 <p className='p-2'>
                     <a className='bg-light border rounded-circle p-1 border-5' href='https://www.linkedin.com/in/rajkumar-r-0755b2184/' rel="noreferrer" target='_blank'>
@@ -61,7 +62,7 @@ const Contacts = () => {
                     <div>
                         <button className='btn btn-success' >Send me a mail</button>
                     </div>
-                    <ToastContainer />
+
                 </div>
             </form>
         </div>
