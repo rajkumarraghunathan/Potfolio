@@ -30,6 +30,7 @@ function App() {
       <ScrollButton />
       <div className=' container divider'></div>
       <Contacts />
+      <div className=' container divider'></div>
       <Footer />
     </div>
   );
