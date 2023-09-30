@@ -23,13 +23,13 @@ const Contacts = () => {
 
             // Check if the email was sent successfully
             if (response.status === 200) {
-                toast.success('Email sent successfully');
+                return toast('Email sent successfully');
             } else {
-                toast.error('Email sending failed');
+                return toast('Email sending failed');
             }
         } catch (error) {
             console.error(error);
-            toast.error('Email sending failed');
+            return toast('Email sending failed');
         }
     }
 
