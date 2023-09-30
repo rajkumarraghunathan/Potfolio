@@ -12,16 +12,24 @@ const Contacts = () => {
     const [message, setMessage] = useState('')
 
 
-    const handleForm = (event) => {
+    const handleForm = async (event) => {
         event.preventDefault();
         try {
-            axios.post(`${API_URL}/send-email`, {
-                email: email,
-                message: message
-            }).then(data => console.log(data))
+            // Make a POST request to your backend API for sending emails
+            const response = await axios.post(`${API_URL}/sendEmail`, {
+                email,
+                message,
+            });
+
+            // Check if the email was sent successfully
+            if (response.status === 200) {
+                toast.success('Email sent successfully');
+            } else {
+                toast.error('Email sending failed');
+            }
         } catch (error) {
             console.error(error);
-            return toast(error.message)
+            toast.error('Email sending failed');
         }
     }
 
