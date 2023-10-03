@@ -30,7 +30,7 @@ const Contacts = () => {
             }
         } catch (error) {
             console.error(error);
-            return toast('Email sending failed');
+            return toast('Email sending failed without render');
         }
     }
 
