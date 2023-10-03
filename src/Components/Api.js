@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:4000";
+const API_URL = "https://portfolio-r1aa.onrender.com";
+
 
 
 export default API_URL;
