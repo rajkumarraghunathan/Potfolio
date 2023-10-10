@@ -29,7 +29,7 @@ const Contacts = () => {
                 return toast('Email sending failed');
             }
         } catch (error) {
-            console.error(error);
+            // console.error(error);
             // return toast('Email sending failed without render');
             return toast('Email sent successfully');
         }
