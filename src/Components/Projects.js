@@ -1,6 +1,7 @@
 import React from 'react'
 import Portal from '../images/Portal Thumbnail.jpg'
 import Markdown from '../images/1.jpg'
+import Ecommerce from '../images/E commerce .png'
 
 const Projects = () => {
     return (
@@ -60,8 +61,32 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+                <div class="card text-center shadow-lg p-3 mb-5 bg-body rounded">
+                    <img src={Ecommerce} class="card-img-top" alt="E Commerce" />
+                    <div class="card-body">
+                        <h2 class="card-title fw-bold text-primary">E Commerce Website</h2>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item ">
+                                <div className='d-flex justify-content-center'>
+                                    <h1 class="accordion-header " id="flush-headingThree">
+                                        <button class="accordion-button collapsed btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Description
+                                        </button>
+                                    </h1>
+                                </div>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        To buy a product from the site and the seller to sell the product
+                                    </div>
+                                    <a href='https://radiant-quokka-c36440.netlify.app' target='_blank' rel='noreferrer'>Click</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
